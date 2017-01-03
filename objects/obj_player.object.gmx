@@ -178,15 +178,7 @@ switch (state) {
     }
 }
 
-/*
-if(abs(vy) == 0)
-    vx = (obj_input.right - obj_input.left) * player_speed;
-if(abs(vx) == 0)
-    vy = (obj_input.down - obj_input.up) * player_speed;
-*/
-
-x += vx;
-y += vy;
+scr_check_collision_obj(vx, vy, obj_solid);
 </string>
           </argument>
         </arguments>
